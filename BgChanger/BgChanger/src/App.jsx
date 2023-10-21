@@ -3,6 +3,7 @@ import { useState } from "react";
 function App() {
   // const [count, setCount] = useState(0)
   const [color, setcolor] = useState("grey");
+  //color is a variable and setcolor is a function 
   function greenColor(){
     setcolor('rgb(22 163 74)');
   }
@@ -13,6 +14,7 @@ function App() {
           <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
             <button 
             onClick={() => setcolor("red")} 
+            //we passs callback function inside the onclick 
             className="outline-none px-4 py-1 rounded-full text-white shadow-lg" 
             style={{backgroundColor:"red"}}>Red
             </button>
